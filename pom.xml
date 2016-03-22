@@ -70,7 +70,7 @@
                     <version>RELEASE</version>
                     
                     <configuration>
-                        <mainClass>edu.ifsp.lpy.exemplo_animacao.MainMenu</mainClass>
+                        <mainClass>edu.ifsp.lpy.exemplo_animacao.Animacao</mainClass>
                     </configuration>
 		
                 </plugin>

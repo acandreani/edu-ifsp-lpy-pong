@@ -18,18 +18,31 @@ import javax.swing.Timer;
 
 public class Desenha extends JComponent {
 
+    Mesa mesa = new Mesa();
+    Raquete r1= new Raquete();
+    Raquete r2= new Raquete();
+    Bola bola=new Bola(r1,r2,mesa);
+    
     public int x = 50;
     public int y = 50;
-    public int f 	= 10;	//Start Drawing from X=10	
+    public int f 	= 1;	//Start Drawing from X=10	
     public int delay 	= 50; 	//milliseconds
-    public void paintComponent(Graphics g) {
+    public void paintComponent(  Graphics g) {
         super.paintComponent(g);
-        g.drawRect(x, y, 50, 50);
-        g.fillRect(x, y, 50, 50);
-        g.setColor(Color.BLACK);
+
+        
+                
+                bola.move();
+                bola.desenha(g);
+        
+                
         ActionListener counter = new ActionListener() {
         public void actionPerformed(ActionEvent evt) 
-        { 
+        {
+//       g.drawRect((int)x,(int)y, 50, 50);
+//        g.fillRect((int)x, (int)y, 50, 50);
+//        
+              
               repaint();
               f++;
         }};

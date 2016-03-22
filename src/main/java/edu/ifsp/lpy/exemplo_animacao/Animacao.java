@@ -37,8 +37,8 @@ public class Animacao extends JFrame implements KeyListener
                 Animacao  frame =  new Animacao ();		
                 frame.setTitle("Square Move Practice");
                 frame.setResizable(false);
-                frame.setSize(600, 600);
-                frame.setMinimumSize(new Dimension(600, 600));
+                frame.setSize(800, 600);
+                frame.setMinimumSize(new Dimension(800, 600));
                 frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
                 frame.getContentPane().add(frame.desenha);
                 frame.pack();
@@ -55,7 +55,7 @@ public class Animacao extends JFrame implements KeyListener
 	    Container container = getContentPane();
 	    
 	    setDefaultCloseOperation(EXIT_ON_CLOSE);
-	    setSize(400,400);
+	    setSize(600,600);
 	    setTitle("Animação com JFrame");
 	    setVisible(true);
 	}
